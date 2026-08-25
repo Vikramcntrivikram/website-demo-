@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[user]
+	name = TRIVIKRAM GURJAR
+	email = trivikram.gurjar@example.com
+[remote "origin"]
+	url = https://github.com/trivikramgurjar/devara_ata.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
