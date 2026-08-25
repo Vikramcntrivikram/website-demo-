@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVARA AATA - Indian Gods Stories</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts: Caveat + Quicksand + Noto Sans Kannada -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Noto+Sans+Kannada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕉️</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Header/Hero Section -->
+        <header class="hero">
+            <h1 class="hero-title">DEVARA AATA</h1>
+            <p class="hero-subtitle">Explore the Stories of Indian Gods in English and Kannada</p>
+            <nav class="hero-nav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How it works</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <h2 class="section-title">About DEVARA AATA</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>DEVARA AATA is an AI-powered chat assistance that brings the rich stories of Indian gods to life. Whether you're curious about Ganesha's wisdom, Shiva's cosmic dance, or Vishnu's preservative role, our platform provides engaging narratives in both English and Kannada.</p>
+                    <p>With AI-generated illustrations and bilingual storytelling, we aim to make Indian mythology accessible and enjoyable for everyone.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Select a God Section -->
+        <section id="select-god" class="section">
+            <h2 class="section-title">Choose a God's Story</h2>
+            <p class="section-subtitle">Click on any deity below to hear their story:</p>
+            <div class="gods-grid">
+                <button class="god-btn" data-god="Ganesha">🕉️ Ganesha</button>
+                <button class="god-btn" data-god="Shiva">🕉️ Shiva</button>
+                <button class="god-btn" data-god="Vishnu">🕉️ Vishnu</button>
+                <button class="god-btn" data-god="Brahma">🕉️ Brahma</button>
+                <button class="god-btn" data-god="Krishna">🕉️ Krishna</button>
+                <button class="god-btn" data-god="Rama">🕉️ Rama</button>
+                <button class="god-btn" data-god="Hanuman">🕉️ Hanuman</button>
+                <button class="god-btn" data-god="Devi">🕉️ Devi</button>
+                <button class="god-btn" data-god="Lakshmi">🕉️ Lakshmi</button>
+                <button class="god-btn" data-god="Saraswati">🕉️ Saraswati</button>
+                <button class="god-btn" data-god="Kali">🕉️ Kali</button>
+                <button class="god-btn" data-god="Durga">🕉️ Durga</button>
+                <button class="god-btn" data-god="Parvati">🕉️ Parvati</button>
+                <button class="god-btn" data-god="Shakti">🕉️ Shakti</button>
+                <button class="god-btn" data-god="Kartikeya">🕉️ Kartikeya</button>
+                <button class="god-btn" data-god="Indra">🕉️ Indra</button>
+                <button class="god-btn" data-god="Agni">🕉️ Agni</button>
+                <button class="god-btn" data-god="Vayu">🕉️ Vayu</button>
+                <button class="god-btn" data-god="Varuna">🕉️ Varuna</button>
+                <button class="god-btn" data-god="Kubera">🕉️ Kubera</button>
+                <button class="god-btn" data-god="Yama">🕉️ Yama</button>
+                <button class="god-btn" data-god="Vishwakarma">🕉️ Vishwakarma</button>
+                <button class="god-btn" data-god="Dhanvantari">🕉️ Dhanvantari</button>
+                <button class="god-btn" data-god="Hayagriva">🕉️ Hayagriva</button>
+                <button class="god-btn" data-god="Ranganatha">🕉️ Ranganatha</button>
+                <button class="god-btn" data-god="Jagannatha">🕉️ Jagannatha</button>
+                <button class="god-btn" data-god="Venkateswara">🕉️ Venkateswara</button>
+                <button class="god-btn" data-god="Ayyappa">🕉️ Ayyappa</button>
+                <button class="god-btn" data-god="Murugan">🕉️ Murugan</button>
+                <button class="god-btn" data-god="Ayodhya Rama">🕉️ Ayodhya Rama</button>
+                <button class="god-btn" data-god="Bala Krishna">🕉️ Bala Krishna</button>
+            </div>
+        </section>
+
+        <!-- Chat Interface Section -->
+        <section id="chat-interface" class="section">
+            <h2 class="section-title">Talk to DEVARA AATA</h2>
+            <div class="chat-container">
+                <div class="language-toggle" id="language-toggle">
+                    <button id="english-btn" class="active">English</button>
+                    <button id="kannada-btn">ಕನ್ನಡ</button>
+                    <span id="current-language">English</span>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Messages will be added dynamically by JavaScript -->
+                </div>
+                <form id="chat-form" class="chat-input">
+                    <input type="text" id="chat-input" placeholder="Ask about any Indian god..." required>
+                    <button type="submit">Send</button>
+                </form>
+                <div class="chat-actions">
+                    <button id="generate-image-btn" disabled>Generate Image</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section id="image-gallery-section" class="section">
+            <h2 class="section-title">Generated Images</h2>
+            <div class="image-gallery" id="image-gallery">
+                <!-- Images will be added dynamically by JavaScript -->
+            </div>
+            <p class="text-center" id="gallery-placeholder">Generate images by chatting with DEVARA AATA first!</p>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section projects">
+            <h2 class="section-title">Features</h2>
+            <div class="projects-grid">
+                <!-- Feature Card 1 -->
+                <div class="project-card">
+                    <h3 class="project-title">Bilingual Chat</h3>
+                    <p class="project-description">Ask about any Indian god and receive stories in both English and Kannada. Switch languages seamlessly to experience the tales in your preferred language.</p>
+                    <div class="project-tags">
+                        <span class="tag">AI Chat</span>
+                        <span class="tag">English/Kannada</span>
+                        <span class="tag">Mythology</span>
+                    </div>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="project-card">
+                    <h3 class="project-title">AI Image Generation</h3>
+                    <p class="project-description">Create beautiful illustrations of gods and goddesses based on their stories. Choose from traditional, modern, or miniature art styles to visualize the divine.</p>
+                    <div class="project-tags">
+                        <span class="tag">AI Art</span>
+                        <span class="tag">Image Generation</span>
+                        <span class="tag">Customizable Styles</span>
+                    </div>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="project-card">
+                    <h3 class="project-title">Rich Mythology Knowledge</h3>
+                    <p class="project-description">Explore detailed stories of major deities like Ganesha, Shiva, Vishnu, Devi, Krishna, Rama, and many more. Learn about festivals, rituals, and symbolism associated with each god.</p>
+                    <div class="project-tags">
+                        <span class="tag">Comprehensive</span>
+                        <span class="tag">Educational</span>
+                        <span class="tag">Cultural</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="section skills">
+            <h2 class="section-title">How It Works</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>1. Ask a Question</h3>
+                    <p class="skill-list">Type your question about an Indian god in the chat interface. For example: "Tell me the story of Ganesha" or "What is the significance of Shiva's trident?"</p>
+                </div>
+                <div class="skill-category">
+                    <h3>2. Get a Story</h3>
+                    <p class="skill-list">Our AI processes your query and generates an engaging story in your selected language (English or Kannada), complete with cultural context and moral lessons.</p>
+                </div>
+                <div class="skill-category">
+                    <h3>3. Generate an Image</h3>
+                    <p class="skill-list">Click the 'Generate Image' button to create a visual representation of the story or deity you just learned about. Choose your preferred art style.</p>
+                </div>
+                <div class="skill-category">
+                    <h3>4. Save and Share</h3>
+                    <p class="skill-list">Save your favorite stories and images to your personal gallery, or share them with friends and family via social media.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>📧 devaraata@example.com</p>
+                    <p>🌐 devaraata.vercel.app</p>
+                </div>
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 DEVARA AATA. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="GitHub">🐙</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/image.js"></script>
+</body>
+</html>
